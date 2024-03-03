@@ -1,8 +1,113 @@
 body {
+    width: 100vw;
+    height: 100vh;
     font-family: var(--main-font);
+    color: var(--main-text);
+    background-color: var(--main-black);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Cabeçalho*/
+header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu a {
+    color: var(--main-text);
+}
+
+.menu a:hover {
+    color: tomato;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
 }
 
 img {
-    width: 50px;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
 }
+
+.disciplinas {
+    background-color: var(--card-black);
+    border-radius: 25px;
+}
+
+.docente {
+    display: flex;
+    gap: 20px;
+    padding: 20px
+}
+
+.docente__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about {
+    padding: 0 20px 20px 20px;
+}
+
+.horario {
+    text-align: center;
+    margin: 25px 0;
+}
+
+table, th, td {
+    border: 1px solid var(--main-text);
+}
+
+.horario h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario p {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;    
+}
+
+.formulario__input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+footer {
+    text-align: center;
+}
+

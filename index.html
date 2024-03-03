@@ -11,40 +11,56 @@
     />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/var.css">
+    <link rel="stylesheet" href="./styles/var.css" />
     <link rel="shortcut icon" href="./assets/unicesumar-logo.jpeg" />
     <title>3° Semestre</title>
   </head>
   <body>
+
     <header>
       <nav>
-        <li>
+        <li class="menu">
           <ul>
-            Programação front-end
+            <a href="#frontend">Programação front-end</a>
           </ul>
           <ul>
-            Estrutura de dados
+            <a href="#estruturaDeDados">Estrutura de dados</a>
           </ul>
           <ul>
-            Análise e projeto orientado a objetos
+            <a href="#poo">Análise e projeto orientado a objetos</a>
+          </ul>
+          <ul>
+            <a href="#grade">Grade horária</a>
+          </ul>
+          <ul>
+            <a href="#contato">Contato</a>
           </ul>
         </li>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h1>Apresentação do 3° semestre de Engenharia de Software</h1>
-        <div class="disciplinas">
-          <h2>Disciplina: Programação front-end</h2>
-          <img
-            src="./assets/imagem-temporaria.jpg"
-            alt="Imagem do professor de front-end."
-          />
-          <p>Ano/Semestre: 2024/01</p>
-          <p>Turma: ESOFT3S-N-P4</p>
-          <p>Docente: João Choma Neto</p>
+      <section class="cards">
+        <div id="frontend" class="disciplinas">
+          <div class="docente">
+            <div class="docente__img">
+              <img
+                src="./assets/imagem-temporaria.jpg"
+                alt="Imagem do professor de front-end."
+              />
+            </div>
+            <div class="docente__text">
+              <h2>Disciplina: Programação front-end</h2>
+              <p>Ano/Semestre: 2024/01</p>
+              <p>Turma: ESOFT3S-N-P4</p>
+              <p>Docente: João Choma Neto</p>
+            </div>
+          </div>
+          <div class="about">
           <h3>Sobre o curso</h3>
+          <br>
           <p>Ementa</p>
+          <div class="line"></div>
           <p>
             Esta disciplina tem como objetivo introduzir os conceitos e técnicas
             fundamentais para o desenvolvimento de interfaces de usuário na web,
@@ -54,6 +70,7 @@
             responsivas, acessíveis e interativas, preparando o aluno para
             enfrentar os desafios do desenvolvimento front end moderno.
           </p>
+          <br>
           <p>Objetivo</p>
           <p>
             Compreender os Conceitos Fundamentais de Desenvolvimento web
@@ -65,7 +82,9 @@
             específicos para o front end. Entender os princípios de design
             responsivo, usabilidade, e acessibilidade na web.
           </p>
+          <br>
           <p>Justificativa</p>
+
           <p>
             A disciplina de Desenvolvimento Front End atende à crescente demanda
             do mercado por profissionais capacitados na criação de interfaces
@@ -76,16 +95,26 @@
             design e desenvolvimento.
           </p>
         </div>
-        <div class="disciplinas">
-          <h2>Disciplina: Estrutura de dados</h2>
-          <img
-            src="./assets/imagem-temporaria.jpg"
-            alt="Imagem do professor de front-end."
-          />
-          <p>Ano/Semestre: 2024/01</p>
-          <p>Turma: ESOFT3S-N-P4</p>
-          <p>Docente: Edson Alexandre Domingues Moreno</p>
+        </div>
+
+        <div id="estruturaDeDados" class="disciplinas">
+          <div class="docente">
+            <div class="docente__img">
+              <img
+                src="./assets/imagem-temporaria.jpg"
+                alt="Imagem do professor de front-end."
+              />
+            </div>
+            <div class="docente__text">
+              <h2>Disciplina: Estrutura de dados</h2>
+              <p>Ano/Semestre: 2024/01</p>
+              <p>Turma: ESOFT3S-N-P4</p>
+              <p>Docente: Edson Alexandre Domingues Moreno</p>
+            </div>
+          </div>
+          <div class="about">
           <h3>Sobre o curso</h3>
+          <br>
           <p>Ementa</p>
           <p>
             Conceitos e técnica de manipulação de dados em memória; Estruturas
@@ -96,6 +125,7 @@
             árvores balanceadas; Algoritmos de grafos; Algoritmos para pesquisa
             e ordenação interna.
           </p>
+          <br>
           <p>Objetivo</p>
           <p>
             Tornar o aluno apto a trabalhar com informação de forma estruturada,
@@ -106,6 +136,7 @@
             dados Apresentar os algoritmos de pesquisa de dados Compreender
             aplicações que façam uso de estruturas de dados
           </p>
+          <br>
           <p>Justificativa</p>
           <p>
             A disciplina de Estrutura de Dados é fundamental no contexto
@@ -118,16 +149,27 @@
             e Linguagem e Técnicas de Programação.
           </p>
         </div>
-        <div class="disciplinas">
-          <h2 id="poo">Disciplina: Análise e projeto orientado a objetos</h2>
-          <img
-            src="./assets/imagem-temporaria.jpg"
-            alt="Imagem do professor de front-end."
-          />
-          <p>Ano/Semestre: 2024/01</p>
-          <p>Turma: ESOFT3S-N-P4</p>
-          <p>Docente: Antonio Carlos Prestes Perine</p>
+        </div>
+        <div id="poo" class="disciplinas">
+          <div class="docente">
+            <div class="docente__img">
+              <img
+                src="./assets/imagem-temporaria.jpg"
+                alt="Imagem do professor de front-end."
+              />
+            </div>
+            <div class="docente__text">
+              <h2>
+                Disciplina: Análise e projeto orientado a objetos
+              </h2>
+              <p>Ano/Semestre: 2024/01</p>
+              <p>Turma: ESOFT3S-N-P4</p>
+              <p>Docente: Antonio Carlos Prestes Perine</p>
+            </div>
+          </div>
+          <div class="about">
           <h3>Sobre o curso</h3>
+          <br>
           <p>Ementa</p>
           <p>
             Análise e projeto de software. Linguagens de modelagem de software.
@@ -136,6 +178,7 @@
             ferramenta de análise. Diagrama de classes X. Classes do sistema.
             Utilização de diagramas no desenvolvimento de software.
           </p>
+          <br>
           <p>Objetivo</p>
           <p>
             Compreender os conceitos da Análise e Projeto Orientado a Objetos;
@@ -143,6 +186,7 @@
             a objetos utilizando UML; Projetar soluções do mundo real e produzir
             uma abstração orientada a objetos utilizando UML;
           </p>
+          <br>
           <p>Justificativa</p>
           <p>
             Reconhecer a relevância da análise e do projeto no âmbito da
@@ -158,18 +202,65 @@
             documentação inerente ao desenvolvimento orientado a objetos.
           </p>
         </div>
+      </div>
       </section>
-      <section class="horario">
+
+      <section id="grade" class="horario">
         <h2>Grade horária</h2>
+        <table class="horario__tabela">
+          <tr>
+            <th></th>
+            <th>Segunda-feira</th>
+            <th>Terça-feira</th>
+            <th>Quarta-feira</th>
+            <th>Quinta-feira</th>
+            <th>Sexta-feira</th>
+          </tr>
+          <tr>
+            <td>19:00 - 20:30</td>
+            <td>Programação front-end</td>
+            <td>Estrutura de dados</td>
+            <td>Análise e projeto orientado a objetos</td>
+            <td>Programação front-end</td>
+            <td>Estrutura de dados</td>
+          </tr>
+          <tr>
+            <td>21:00 - 22:30</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Análise e projeto orientado a objetos</td>
+            <td>-</td>
+          </tr>
+        </table>
       </section>
-      <section class="formulario">
-        <p>Entre em contato com o coordenador.</p>
+
+      <section id="contato" class="formulario">
+        <p>Entre em contato com o coordenador</p>
+        <form ction="/action_page.php" target="_blank" method="post" autocomplete="on">
+          <div class="formulario__input">
+            
+          <label for="">Nome completo:</label>
+          <input type="text" placeholder="Nome Completo">
+          <label for="">Email acadêmico:</label>
+          <input type="email" placeholder="Email">
+          <label for="">RA:</label>
+          <input type="text" placeholder="Registro acadêmico">
+          <label for="">Assunto:</label>
+          <input type="text" placeholder="Como podemos ajudar?">
+          <input type="submit">
+          </div>
+
+        </form>
       </section>
+
     </main>
+
     <footer>
       <p>
         Desenvolvido por Lucas Catuyama para a disciplina "Programção Front-end"
       </p>
     </footer>
+
   </body>
 </html>
