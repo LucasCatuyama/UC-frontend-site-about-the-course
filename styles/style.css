@@ -1,5 +1,5 @@
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-family: var(--main-font);
     color: var(--main-text);
@@ -10,24 +10,25 @@ body {
 
 /*Cabeçalho*/
 header {
-    width: 100vw;
-    height: 50px;
+    width: 100%;
+    height: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--card-black);
 }
 
 .menu {
     display: flex;
-    gap: 50px;
 }
 
 .menu a {
     color: var(--main-text);
+    padding: 23px;
 }
 
 .menu a:hover {
-    color: tomato;
+    border-bottom: solid 2px #fff;
 }
 
 main {
@@ -42,8 +43,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-
+    margin-top: 30px;
 }
 
 img {
@@ -55,6 +55,7 @@ img {
 .disciplinas {
     background-color: var(--card-black);
     border-radius: 25px;
+    margin: 30px 0px;
 }
 
 .docente {
@@ -71,15 +72,34 @@ img {
 
 .about {
     padding: 0 20px 20px 20px;
+    line-height: 20px;
+}
+
+.about h3 {
+    font-size: 20px;
+}
+
+.about h3, .about__topico {
+    font-weight: 700;
+}
+
+.about__topico {
+    margin-bottom: 5px;
 }
 
 .horario {
     text-align: center;
     margin: 25px 0;
+    background-color: var(--card-black);
+    width: 70%;
+    height: auto;
+    padding: 30px;
+    border-radius: 25px;
 }
 
 table, th, td {
     border: 1px solid var(--main-text);
+    padding: 5px;
 }
 
 .horario h2 {
@@ -89,9 +109,15 @@ table, th, td {
 }
 
 .formulario {
+    background-color: var(--card-black);
+    width: 40%;
+    height: auto;
+    padding: 50px 50px 20px 50px;
+    margin: 30px 0 60px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
 }
 
 .formulario p {
@@ -104,10 +130,56 @@ table, th, td {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 10px;
+}
+
+.formulario__input label {
+    margin-bottom: 10px;
+}
+
+.formulario__input input {
+    margin-bottom: 30px;
+    padding: 3px 0;
+}
+
+.formulario__input input:hover {
+    margin-bottom: 30px;
+    padding: 3px 0;
+    border: solid 2px #4283C4;
+}
+
+.submeter {
+    margin-top: 30px;
+
+}
+
+.submeter:hover {
+    background-color: #4283C4;
+    border-color: #4283C4;
+    color: var(--main-text);
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
     text-align: center;
+    width: 100%;
+    height: 15%;
+    background-color: var(--card-black);
 }
 
+.footer__contato {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer img {
+    width: 16px;
+    height: auto;
+}
+
+footer a {
+    color: var(--main-text);
+}
