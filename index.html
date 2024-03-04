@@ -10,8 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/var.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/table.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css">
     <link rel="shortcut icon" href="./assets/unicesumar-logo.jpeg" />
     <title>3° Semestre</title>
   </head>
@@ -40,13 +45,10 @@
 
     <main>
       <section class="cards">
-        <div id="frontend" class="disciplinas">
+        <div id="frontend" class="cards__disciplinas">
           <div class="docente">
             <div class="docente__img">
-              <img
-                src="./assets/Bulbasaur.png"
-                alt="Imagem do Bulbasaur."
-              />
+              <img src="./assets/Bulbasaur.png" alt="Imagem do Bulbasaur." />
             </div>
             <div class="docente__text">
               <h2>Disciplina: Programação front-end</h2>
@@ -95,13 +97,10 @@
           </div>
         </div>
 
-        <div id="estruturaDeDados" class="disciplinas">
+        <div id="estruturaDeDados" class="cards__disciplinas">
           <div class="docente">
             <div class="docente__img">
-              <img
-                src="./assets/Charmander.png"
-                alt="Imagem Charmander."
-              />
+              <img src="./assets/Charmander.png" alt="Imagem Charmander." />
             </div>
             <div class="docente__text">
               <h2>Disciplina: Estrutura de dados</h2>
@@ -149,19 +148,16 @@
             </p>
           </div>
         </div>
-        <div id="poo" class="disciplinas">
+        <div id="poo" class="cards__disciplinas">
           <div class="docente">
             <div class="docente__img">
-              <img
-                src="./assets/Squirtle.png"
-                alt="Imagem do Squirtle."
-              />
+              <img src="./assets/Squirtle.png" alt="Imagem do Squirtle." />
             </div>
             <div class="docente__text">
               <h2>Disciplina: Análise e projeto orientado a objetos</h2>
               <p>Ano/Semestre: 2024/01</p>
               <p>Turma: ESOFT3S-N-P4</p>
-              <p>Docente: Antonio Carlos Prestes Perine</p>
+              <p>Docente: João Messias Pereira Lenco</p>
             </div>
           </div>
           <div class="about">
@@ -233,7 +229,7 @@
       </section>
 
       <section id="contato" class="formulario">
-        <p>Entre em contato com o coordenador</p>
+        <h3>Entre em contato com o coordenador</h3>
         <form
           action="https://formsubmit.co/18e13a898e5706db2bcd0afb6cc63204"
           target="_blank"
@@ -241,18 +237,25 @@
           autocomplete="on"
         >
           <div class="formulario__input">
-                <label for="">Nome completo:</label>
-                <input type="text" placeholder="Nome Completo" />
-                <label for="">Email acadêmico:</label>
-                <input type="email" placeholder="Email" />
-                <label for="">RA:</label>
-                <input type="text" placeholder="Registro acadêmico" />
-            <label for="">Assunto:</label>
-            <textarea id="mensagem" name="mensagem" rows="8" required placeholder="Como podemos ajudar?"></textarea>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" placeholder="Nome Completo" required/>
+            <label for="email">Email acadêmico:</label>
+            <input type="email" id="email" placeholder="Email" required/>
+            <label for="ra">RA:</label>
+            <input type="text" id="ra" placeholder="Registro acadêmico" required />
+            <label for="mensagem">Assunto:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="8"
+              required
+              placeholder="Como podemos ajudar?"
+            ></textarea>
             <input class="submeter" type="submit" />
           </div>
         </form>
       </section>
+      
     </main>
 
     <footer>

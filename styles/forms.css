@@ -1,0 +1,53 @@
+.formulario {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--card-black);
+  padding: 50px 50px 20px 50px;
+  margin-bottom: 60px;
+  border-radius: 25px;
+}
+
+.formulario h3 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.formulario__input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.formulario__input textarea {
+    max-height: 500px; 
+    resize: vertical;
+    overflow-y: auto; 
+  }
+
+.formulario__input label {
+  margin-bottom: 10px;
+}
+
+.formulario__input input {
+  margin-bottom: 30px;
+  padding: 3px 0;
+}
+
+.formulario__input input:hover {
+  margin-bottom: 30px;
+  padding: 3px 0;
+  border: solid 2px #4283c4;
+}
+
+.submeter {
+  margin-top: 30px;
+}
+
+.submeter:hover {
+  background-color: var(--main-blue);
+  border-color: var(--main-blue);
+  color: var(--main-text);
+}
