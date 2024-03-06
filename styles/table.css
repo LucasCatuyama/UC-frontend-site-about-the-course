@@ -13,6 +13,7 @@
 table, th, td {
     border: 1px solid var(--main-text);
     padding: 5px;
+    overflow-x: auto;
 }
 
 td:hover {
